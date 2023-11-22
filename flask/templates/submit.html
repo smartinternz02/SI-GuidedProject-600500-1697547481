@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-image: url('./background.jpg');
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #f8f0f0;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Online Payment Fraud Detection</h1>
+        <!-- Add this line to create an element with id 'predicted-fraud' -->
+        <p id="predicted-fraud"></p>
+    </div>
+
+    <script>
+        // You can replace this script with actual backend logic to set the predicted value
+        // For demonstration purposes, I'm using a static value here
+        var predictedFraud = "is not fraud"; // Replace this with the actual predicted value from your backend
+        document.getElementById('predicted-fraud').innerText = "The predicted fraud for the online payment " + predictedFraud;
+    </script>
+</body>
+
+</html>
+
